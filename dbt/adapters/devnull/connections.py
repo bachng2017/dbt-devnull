@@ -5,6 +5,7 @@ from dbt.adapters.base import Credentials
 from dbt.adapters.sql import SQLConnectionManager
 from dbt.logger import GLOBAL_LOGGER as logger
 from typing import Optional
+import dbt.exceptions
 
 @dataclass
 class DevNullCredentials(Credentials):
