@@ -4,7 +4,7 @@ from os import path
 
 package_name = "dbt-devnull"
 # make sure this always matches dbt/adapters/devnull/__version__.py
-package_version = "1.1.0b1"
+package_version = "1.1.1b1"
 description = """The devnull adapter plugin for dbt"""
 
 here = path.abspath(path.dirname(__file__))
