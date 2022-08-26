@@ -4,7 +4,7 @@ from os import path
 
 package_name = "dbt-devnull"
 # make sure this always matches dbt/adapters/devnull/__version__.py
-package_version = "1.1.1b1"
+package_version = "1.1.2"
 description = """The devnull adapter plugin for dbt"""
 
 here = path.abspath(path.dirname(__file__))
@@ -24,6 +24,6 @@ setup(
     packages=find_namespace_packages(include=['dbt', 'dbt.*']),
     include_package_data=True,
     install_requires=[
-        "dbt-core==1.1.0",
+        "dbt-core>=1.1.0",
     ]
 )
