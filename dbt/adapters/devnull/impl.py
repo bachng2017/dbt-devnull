@@ -17,3 +17,6 @@ class DevNullAdapter(SQLAdapter):
 
     def debug_query(self) -> None:
         pass
+
+    def get_columns_in_relation(self, relation: BaseRelation):
+        return []
